@@ -21,8 +21,8 @@ verbose = st.checkbox("Do you want verbose output?", value=False, key="verbose")
 if st.button('Predict', key='classify_button'):
     suggestion = get_suggestions(my_text)
     
-for item in suggestion.keys():
-    if verbose:
-        st.write(f"{my_text}: {item}      Probability: {suggestion[item]}")
-    else:
-        st.write(f"{my_text}: {item}")
+    for item in suggestion.keys():
+        if verbose:
+            st.write(f"{my_text}: {item}      Probability: {suggestion[item]}")
+        else:
+            st.write(f"{my_text}: {item}")
