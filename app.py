@@ -23,6 +23,6 @@ if st.button('Predict', key='classify_button'):
     
     for item in suggestion.keys():
         if verbose:
-            st.write(f"{my_text}: {item}      Probability: {suggestion[item]}")
+            st.write(f"{my_text}: {item}\t\tProbability: {suggestion[item]}")
         else:
             st.write(f"{my_text}: {item}")
